@@ -1,9 +1,19 @@
-# -*- coding: utf-8 -*-
-# vim: ft=sls
+{% from "lynis/map.jinja" import lynis with context %}
 
-{% from "lynis/map.jinja" import lynis %}
+{% if lynis.use_repo %}
+include:
+  - lynis.repo
+{% endif %}
 
-install_lynis:
-  git.latest:
-    - name: {{ lynis.git_url }}
-    - target: '/usr/local/lynis'
+lynis.packages:
+  pkg.installed:
+    - pkgs:
+      - lynis
+      {% if lynis.repo.use_customers_repo and lynis.repo.install_plugins %}
+      - lynis-plugins
+      {% endif %}
+    {% if lynis.use_repo %}
+    - refresh_db: True
+    - require:
+      - sls: lynis.repo
+    {% endif %}
