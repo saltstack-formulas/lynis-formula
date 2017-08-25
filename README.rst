@@ -18,4 +18,19 @@ Available states
 ``lynis``
 ------------
 
+Meta state to installs Lynis.
+
+``lynis.install``
+-----------------
+
+Install lynis from package
+
+``lynis.source``
+----------------
+
 Installs the latest version of Lynis from it's git repository.
+
+``lynis.repo``
+--------------
+
+Creates the repo file to install lynis from upstream repository.

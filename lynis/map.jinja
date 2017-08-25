@@ -1,6 +1,31 @@
 # -*- coding: utf-8 -*-
 # vim: ft=jinja
 
+{## Start with  defaults from defaults.yaml ##}
 {% import_yaml 'lynis/defaults.yaml' as default_settings %}
 
 {% set lynis = default_settings.lynis %}
+
+{##
+Setup variable using grains['os_family'] based logic, only add key:values here
+that differ from whats in defaults.yaml
+##}
+{% set os_family_map = salt['grains.filter_by']({
+    'Debian': {
+      'config-dir': '/etc/lynis',
+    },
+    'RedHat': {},
+    'Arch': {},
+    'Suse': {},
+  }, grain='os_family', merge=salt['pillar.get']('lynis:lookup')) 
+%}
+
+{## Merge the flavor_map to the default settings ##}
+{% do default_settings.lynis.update(os_family_map) %}
+
+{## Merge in salt:lookup pillar ##}
+{% set lynis = salt['pillar.get'](
+    'lynis',
+    default=default_settings.lynis,
+    merge=True)
+%}
