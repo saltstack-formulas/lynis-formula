@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 # vim: ft=yaml
+---
 lynis:
-  install_from_package: False
-  install_from_source: True
-  use_repo: false
+  install_from_package: false
+  install_from_source: true
   git_url: 'https://github.com/CISOfy/lynis.git'
+  use_repo: false
   repo:
-    install_plugins: False
-    license_key: None
+    install_plugins: false
+    license_key: none
     upload_server: portal.cisofy.com
-    use_customers_repo: False
+    use_customers_repo: false
+  config-dir: /etc/lynis
