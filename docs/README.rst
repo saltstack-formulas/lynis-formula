@@ -17,6 +17,7 @@ lynis-formula
 Formula to set up and configure lynis
 
 .. contents:: **Table of Contents**
+   :depth: 1
 
 General notes
 -------------
@@ -32,6 +33,8 @@ which contains the currently released version. This formula is versioned accordi
 
 See `Formula Versioning Section <https://docs.saltstack.com/en/latest/topics/development/conventions/formulas.html#versioning>`_ for more details.
 
+If you need (non-default) configuration, please pay attention to the ``pillar.example`` file and/or `Special notes`_ section.
+
 Contributing to this repo
 -------------------------
 
@@ -39,11 +42,16 @@ Contributing to this repo
 
 Please see `How to contribute <https://github.com/saltstack-formulas/.github/blob/master/CONTRIBUTING.rst>`_ for more details.
 
+Special notes
+-------------
+
+None.
+
 Available states
 ----------------
 
 .. contents::
-    :local:
+   :local:
 
 ``lynis``
 ^^^^^^^^^
