@@ -2,6 +2,21 @@
 Changelog
 =========
 
+`0.3.0 <https://github.com/saltstack-formulas/lynis-formula/compare/v0.2.2...v0.3.0>`_ (2020-09-22)
+-------------------------------------------------------------------------------------------------------
+
+Bug Fixes
+^^^^^^^^^
+
+
+* **kitchen:** we should run tests with the upstream Lynis repository (\ `43104a9 <https://github.com/saltstack-formulas/lynis-formula/commit/43104a9394572665900ccdba63354da5dfc93abf>`_\ )
+
+Features
+^^^^^^^^
+
+
+* **states:** add support for Redhat and Suse (\ `ffb5aaa <https://github.com/saltstack-formulas/lynis-formula/commit/ffb5aaa13af61ea295c65a9c5a77cbf006be1260>`_\ )
+
 `0.2.2 <https://github.com/saltstack-formulas/lynis-formula/compare/v0.2.1...v0.2.2>`_ (2020-09-22)
 -------------------------------------------------------------------------------------------------------
 
