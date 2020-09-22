@@ -4,3 +4,4 @@
 lynis:
   install_from_package: true
   install_from_source: false
+  use_repo: true

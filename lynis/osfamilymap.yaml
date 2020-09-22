@@ -10,4 +10,27 @@
 # you will need to provide at least an empty dict in this file, e.g.
 # osfamilymap: {}
 ---
-osfamilymap: {}
+Debian:
+  repo:
+    humanname: Lynis repo
+    name: deb https://packages.cisofy.com/community/lynis/deb/ stable main
+    file: /etc/apt/sources.list.d/lynis.list
+    key_url: https://packages.cisofy.com/keys/cisofy-software-public.key
+
+RedHat:
+  repo:
+    humanname: Lynis repo
+    name: Lynis
+    enabled: true
+    gpgcheck: 1
+    baseurl: https://packages.cisofy.com/community/lynis/rpm/
+    gpgkey: https://packages.cisofy.com/keys/cisofy-software-rpms-public.key
+
+Suse:
+  repo:
+    humanname: Lynis repo
+    name: Lynis
+    enabled: true
+    gpgcheck: 0
+    baseurl: https://packages.cisofy.com/community/lynis/rpm/
+    gpgautoimport: true

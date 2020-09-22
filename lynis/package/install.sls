@@ -15,7 +15,7 @@ lynis/package/install:
   pkg.installed:
     - pkgs:
       - lynis
-      {% if lynis.repo.use_customers_repo and lynis.repo.install_plugins %}
+      {% if lynis.install_plugins %}
       - lynis-plugins
       {% endif %}
     {% if lynis.use_repo %}
