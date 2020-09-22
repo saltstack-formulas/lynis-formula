@@ -5,7 +5,7 @@
 
 include:
 {% if lynis.install_from_source %}
-  - lynis.source
+  - .source
 {% elif lynis.install_from_package %}
-  - lynis.install
+  - .package
 {% endif %}
