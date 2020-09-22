@@ -1,6 +1,11 @@
-{% from "lynis/map.jinja" import lynis with context %}
+# -*- coding: utf-8 -*-
+# vim: ft=sls
 
-lynis_repo:
+{#- Get the `tplroot` from `tpldir` #}
+{%- set tplroot = tpldir.split('/')[0] %}
+{%- from tplroot ~ "/map.jinja" import lynis with context %}
+
+lynis/repo/install:
   pkgrepo.managed:
     - humanname: Lynis
     {% if salt['grains.get']('os_family') == 'Debian' %}

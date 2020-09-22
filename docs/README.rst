@@ -61,7 +61,7 @@ Meta state to installs Lynis.
 ^^^^^^^^^^^^^^
 Installs the Lynis repository.
 
-``lynis.install``
+``lynis.package``
 ^^^^^^^^^^^^^^^^^
 Installs the Lynis package.
 
