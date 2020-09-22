@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/saltstack-formulas/lynis-formula/compare/v0.2.1...v0.2.2) (2020-09-22)
+
+
+### Bug Fixes
+
+* **pillar:** fix values in pillar.example ([8f9c0c2](https://github.com/saltstack-formulas/lynis-formula/commit/8f9c0c2a57f72dbc67f8011fa5a3011a124551fd))
+
 ## [0.2.1](https://github.com/saltstack-formulas/lynis-formula/compare/v0.2.0...v0.2.1) (2020-09-22)
 
 
