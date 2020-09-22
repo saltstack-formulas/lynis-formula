@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/saltstack-formulas/lynis-formula/compare/v0.2.0...v0.2.1) (2020-09-22)
+
+
+### Code Refactoring
+
+* **states:** update states to be synced with template-formula ([d306a3c](https://github.com/saltstack-formulas/lynis-formula/commit/d306a3c89d87e9537655b29088d88e858da293d5))
+
 # [0.2.0](https://github.com/saltstack-formulas/lynis-formula/compare/v0.1.0...v0.2.0) (2020-09-11)
 
 
