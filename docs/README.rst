@@ -69,6 +69,11 @@ Installs the Lynis package.
 ^^^^^^^^^^^^^^^^
 Installs the latest version of Lynis from it's git repository.
 
+``lynis.config``
+^^^^^^^^^^^^^^^^
+Installs the Lynis profiles defined in pillar in Lynis configuration directory.
+
+
 Testing
 -------
 
