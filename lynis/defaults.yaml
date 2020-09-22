@@ -7,4 +7,7 @@ lynis:
   install_plugins: false
   git_url: 'https://github.com/CISOfy/lynis.git'
   use_repo: false
-  config-dir: /etc/lynis
+
+  config_dir: /etc/lynis
+  config:
+    profiles: {}

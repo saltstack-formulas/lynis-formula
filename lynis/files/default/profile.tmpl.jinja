@@ -1,0 +1,13 @@
+########################################################################
+# File managed by Salt at <{{ source }}>.
+# Your changes will be overwritten.
+########################################################################
+
+{%- for config_key, values in config.items() %}
+  {%- for val in values %}
+# Description: {{ val.description }}
+# Reason: {{ val.reason }}
+{{ config_key }}={{ val.name }}
+
+  {% endfor %}
+{%- endfor %}

@@ -9,3 +9,4 @@ include:
 {% elif lynis.install_from_package %}
   - .package
 {% endif %}
+  - .config
