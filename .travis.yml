@@ -70,8 +70,8 @@ jobs:
     - env: INSTANCE=repo-fedora-32-master-py3
     # - env: INSTANCE=default-fedora-31-master-py3
     # - env: INSTANCE=repo-fedora-31-master-py3
-    - env: INSTANCE=default-opensuse-leap-152-master-py3
-    # - env: INSTANCE=repo-opensuse-leap-152-master-py3
+    # - env: INSTANCE=default-opensuse-leap-152-master-py3
+    - env: INSTANCE=repo-opensuse-leap-152-master-py3
     # - env: INSTANCE=default-amazonlinux-2-master-py3
     - env: INSTANCE=amazonlinux-amazonlinux-2-master-py3
     # - env: INSTANCE=default-debian-10-3000-3-py3
@@ -119,7 +119,7 @@ jobs:
     # - env: INSTANCE=default-amazonlinux-1-2019-2-py2
     # - env: INSTANCE=amazonlinux-amazonlinux-1-2019-2-py2
     # - env: INSTANCE=default-arch-base-latest-2019-2-py2
-    - env: INSTANCE=repo-arch-base-latest-2019-2-py2
+    # - env: INSTANCE=repo-arch-base-latest-2019-2-py2
 
     ## Define the release stage that runs `semantic-release`
     - stage: 'release'

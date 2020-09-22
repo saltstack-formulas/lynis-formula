@@ -4,11 +4,7 @@
 lynis:
   install_from_package: false
   install_from_source: true
+  install_plugins: false
   git_url: 'https://github.com/CISOfy/lynis.git'
   use_repo: false
-  repo:
-    use_customers_repo: false
-    install_plugins: false
-    license_key: none
-    upload_server: portal.cisofy.com
   config-dir: /etc/lynis
