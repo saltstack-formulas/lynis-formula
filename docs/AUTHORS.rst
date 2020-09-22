@@ -15,10 +15,10 @@ This list is sorted by the number of commits per contributor in *descending* ord
      - Contributions
    * - :raw-html-m2r:`<img class='float-left rounded-1' src='https://avatars3.githubusercontent.com/u/3433835?v=4' width='36' height='36' alt='@n-rodriguez'>`
      - `@n-rodriguez <https://github.com/n-rodriguez>`_
-     - 10
+     - 11
    * - :raw-html-m2r:`<img class='float-left rounded-1' src='https://avatars2.githubusercontent.com/u/10231489?v=4' width='36' height='36' alt='@myii'>`
      - `@myii <https://github.com/myii>`_
-     - 4
+     - 5
    * - :raw-html-m2r:`<img class='float-left rounded-1' src='https://avatars2.githubusercontent.com/u/4104127?v=4' width='36' height='36' alt='@mostafahussein'>`
      - `@mostafahussein <https://github.com/mostafahussein>`_
      - 2

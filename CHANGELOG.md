@@ -1,5 +1,12 @@
 # Changelog
 
+# [0.4.0](https://github.com/saltstack-formulas/lynis-formula/compare/v0.3.0...v0.4.0) (2020-09-22)
+
+
+### Features
+
+* **state:** add lynis.config state ([9c6c415](https://github.com/saltstack-formulas/lynis-formula/commit/9c6c415d7db54cc9f0bf12107e46895d96304f93))
+
 # [0.3.0](https://github.com/saltstack-formulas/lynis-formula/compare/v0.2.2...v0.3.0) (2020-09-22)
 
 
