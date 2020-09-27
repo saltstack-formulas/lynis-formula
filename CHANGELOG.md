@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.1](https://github.com/saltstack-formulas/lynis-formula/compare/v0.4.0...v0.4.1) (2020-09-27)
+
+
+### Styles
+
+* linting for `yamllint` ([a16bcc5](https://github.com/saltstack-formulas/lynis-formula/commit/a16bcc56d46249296bf8d2fa8e14f89dcf70ab14))
+
 # [0.4.0](https://github.com/saltstack-formulas/lynis-formula/compare/v0.3.0...v0.4.0) (2020-09-22)
 
 
