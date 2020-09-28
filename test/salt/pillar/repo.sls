@@ -16,7 +16,8 @@ lynis:
       bar:
         skip-test:
           - name: KRNL-5788
-            description: Determine why /vmlinuz or /boot/vmlinuz is missing on this Debian/Ubuntu system
+            description: Determine why /vmlinuz or /boot/vmlinuz is missing on this
+                         Debian/Ubuntu system
             reason: This is OVH kernel
 
           - name: 'KRNL-6000:net.ipv4.conf.all.log_martians'
