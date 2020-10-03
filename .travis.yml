@@ -55,6 +55,20 @@ jobs:
                    @commitlint/travis-cli
         - commitlint-travis
 
+    # Run `pre-commit` linters in a single job
+    - language: 'python'
+      env: 'Lint_pre-commit'
+      name: 'Lint: pre-commit'
+      before_install: 'skip'
+      cache:
+        directories:
+          - $HOME/.cache/pre-commit
+      script:
+        # Install and run `pre-commit`
+        - pip install pre-commit==2.7.1
+        - pre-commit run --all-files --color always --verbose
+        - pre-commit run --color always --hook-stage manual --verbose commitlint-travis
+
     ## Define the rest of the matrix based on Kitchen testing
     # Make sure the instances listed below match up with
     # the `platforms` defined in `kitchen.yml`
@@ -70,8 +84,8 @@ jobs:
     - env: INSTANCE=repo-fedora-32-master-py3
     # - env: INSTANCE=default-fedora-31-master-py3
     # - env: INSTANCE=repo-fedora-31-master-py3
-    # - env: INSTANCE=default-opensuse-leap-152-master-py3
-    - env: INSTANCE=repo-opensuse-leap-152-master-py3
+    - env: INSTANCE=default-opensuse-leap-152-master-py3
+    # - env: INSTANCE=repo-opensuse-leap-152-master-py3
     # - env: INSTANCE=default-amazonlinux-2-master-py3
     - env: INSTANCE=amazonlinux-amazonlinux-2-master-py3
     # - env: INSTANCE=default-debian-10-3000-3-py3
@@ -119,7 +133,7 @@ jobs:
     # - env: INSTANCE=default-amazonlinux-1-2019-2-py2
     # - env: INSTANCE=amazonlinux-amazonlinux-1-2019-2-py2
     # - env: INSTANCE=default-arch-base-latest-2019-2-py2
-    # - env: INSTANCE=repo-arch-base-latest-2019-2-py2
+    - env: INSTANCE=repo-arch-base-latest-2019-2-py2
 
     ## Define the release stage that runs `semantic-release`
     - stage: 'release'
