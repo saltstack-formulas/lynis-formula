@@ -2,6 +2,24 @@
 Changelog
 =========
 
+`0.4.2 <https://github.com/saltstack-formulas/lynis-formula/compare/v0.4.1...v0.4.2>`_ (2020-12-16)
+-------------------------------------------------------------------------------------------------------
+
+Bug Fixes
+^^^^^^^^^
+
+
+* **test/pillar/repo:** fix ``yamllint`` violation [skip ci] (\ `ff951ee <https://github.com/saltstack-formulas/lynis-formula/commit/ff951ee7a93dcded368af92f6ec1b2152a6e606f>`_\ )
+
+Continuous Integration
+^^^^^^^^^^^^^^^^^^^^^^
+
+
+* **gitlab-ci:** use GitLab CI as Travis CI replacement (\ `a934181 <https://github.com/saltstack-formulas/lynis-formula/commit/a934181e2685278e4ae0ffe3aaae029f70e700f2>`_\ )
+* **pre-commit:** add to formula [skip ci] (\ `4000167 <https://github.com/saltstack-formulas/lynis-formula/commit/4000167ae9ca30c8693a0067f0fa891892e33fb7>`_\ )
+* **pre-commit:** enable/disable ``rstcheck`` as relevant [skip ci] (\ `9ce35b7 <https://github.com/saltstack-formulas/lynis-formula/commit/9ce35b7831f6232a6f84266c72214339c57f43b9>`_\ )
+* **pre-commit:** finalise ``rstcheck`` configuration [skip ci] (\ `a701519 <https://github.com/saltstack-formulas/lynis-formula/commit/a701519594df04f62a294caea383bdb89cb88fe3>`_\ )
+
 `0.4.1 <https://github.com/saltstack-formulas/lynis-formula/compare/v0.4.0...v0.4.1>`_ (2020-09-27)
 -------------------------------------------------------------------------------------------------------
 
