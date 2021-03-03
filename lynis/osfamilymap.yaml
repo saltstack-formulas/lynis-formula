@@ -34,3 +34,7 @@ Suse:
     gpgcheck: 0
     baseurl: https://packages.cisofy.com/community/lynis/rpm/
     gpgautoimport: true
+
+Gentoo:
+  package: app-forensics/lynis
+  portage_config_flags: []

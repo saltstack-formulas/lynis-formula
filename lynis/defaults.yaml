@@ -2,6 +2,7 @@
 # vim: ft=yaml
 ---
 lynis:
+  package: lynis
   install_from_package: false
   install_from_source: true
   install_plugins: false

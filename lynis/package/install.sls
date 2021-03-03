@@ -26,9 +26,26 @@ lynis/package/pkgrepo/epel:
 {%- endif %}
 
 lynis/package/install:
+  {#- If portage config is provided for Gentoo, construct the `portage_config.flags` state
+      by performing the union of the `base_state` and the config provided via. the map #}
+  {%- if grains.os_family == 'Gentoo' and lynis.get('portage_config_flags', []) %}
+  {%-   load_yaml as base_state %}
+  portage_config_flags:
+    - name: {{ lynis.package }}
+    - require_in:
+      - pkg: lynis/package/install
+  {%-   endload %}
+  {%-   set state_portage_config_flags = base_state.portage_config_flags | union(lynis.portage_config_flags) %}
+  {%-   do salt["log.debug"](
+          "Rendered state (union of `base_state` and config provided via. the map)\n  portage_config.flags:\n"
+          ~ state_portage_config_flags | yaml(False) | indent(4, True)
+        ) %}
+  portage_config.flags: {{ state_portage_config_flags }}
+  {%- endif %}
+
   pkg.installed:
     - pkgs:
-      - lynis
+      - {{ lynis.package }}
       {% if lynis.install_plugins %}
       - lynis-plugins
       {% endif %}
