@@ -312,6 +312,7 @@ suites:
       state_top:
         base:
           '*':
+            - lynis._mapdata
             - lynis
       pillars:
         top.sls:
@@ -328,6 +329,7 @@ suites:
       state_top:
         base:
           '*':
+            - lynis._mapdata
             - lynis
       pillars:
         top.sls:
